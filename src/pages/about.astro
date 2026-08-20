@@ -27,15 +27,17 @@ const textCase = "uppercase";
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
-    <style> define:vars={{skillColor}}
-      h1 {
-        color: rgb(128, 0, 0);
-        font-size: 4rem;
-      }
-       .skill {
-       color: var(--skillColor);
-    font-weight: bold;
+<style define:vars={{ skillColor, fontWeight, textCase }}>
+  h1 {
+    color: rgb(128, 0, 0);
+    font-size: 4rem;
   }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
     </style>
   </head>
   <body>
